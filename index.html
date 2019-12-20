@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Calculator</title>
+    <script src="java.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="whole">
+        <div id="title">Calculate Your Grades!</div>
+        <div id="explanation">Enter each category's respective grade and weight, separating individual work grades with
+        JUST COMMAS (no spaces!). Then enter your desired grade and the final's weight to find out what grade you need
+        to get!</div>
+        <table cellpadding="3" cellspacing="3" align="center">
+            <tr id="hwg">
+                <td>Homework Grade:</td>
+                <td>
+                    <input id="homeworkGrade" value="10">
+                </td>
+            </tr>
+            <tr id="hww">
+                <td>Homework Weight:</td>
+                <td>
+                    <input id="homeworkWeight" value="10">
+                </td>
+            </tr>
+            <tr id="cwg">
+                <td>Classwork Grade:</td>
+                <td>
+                    <input id="classworkGrade" value="10">
+                </td>
+            </tr>
+            <tr id="cww">
+                <td>Classwork Weight:</td>
+                <td>
+                    <input id="classworkWeight"value="10">
+                </td>
+            </tr>
+            <tr id="qg">
+                <td>Quizzes Grade:</td>
+                <td>
+                    <input id="quizGrade" value="10">
+                </td>
+            </tr>
+            <tr id="qw">
+                <td>Quizzes Weight:</td>
+                <td>
+                    <input id="quizWeight" value="10">
+                </td>
+            </tr>
+            <tr id="tg">
+                <td>Tests Grade:</td>
+                <td>
+                    <input id="testGrade" value="10">
+                </td>
+            </tr>
+            <tr id="tw">
+                <td>Tests Weight:</td>
+                <td>
+                    <input id="testWeight" value="10">
+                </td>
+            </tr>
+            <tr id="pg">
+                <td>Participation Grade:</td>
+                <td>
+                    <input id="participationGrade" value="10">
+                </td>
+            </tr>
+            <tr id="pw">
+                <td>Participation Weight:</td>
+                <td>
+                    <input id="participationWeight" value="10">
+                </td>
+            </tr>
+        </table>
+
+        <button id="button1" onclick="avgGradesClick()">Average Grades</button>
+
+        <table cellpadding="3" cellspacing="3" align="center">
+            <tr id="ww">
+                <td id="classWeight" colspan="2"></td>
+            </tr>
+            <tr id="fw">
+                <td>Final Weight:</td>
+                <td>
+                    <input id="finalWeight" value="50">
+                </td>
+            </tr>
+            <tr id="dg">
+                <td>Desired Grade in Class:</td>
+                <td>
+                    <input id="desiredGrade" value="90">
+                </td>
+            </tr>
+            <tr id="result">
+                <td id="finalAvg" colspan="2"></td>
+            </tr>
+        </table>
+
+        <button id="button2" onclick="calculateFinal()">Calculate Final Grade</button>
+    </div>
+</body>
+</html>

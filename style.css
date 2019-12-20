@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+    font-family: Cambria;
+    background-color: aquamarine;
+
+}
+
+#whole {
+    position: relative;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+}
+
+#button1 {
+    font-family: Cambria;
+    font-size: 15px;
+}
+
+#button2 {
+    font-family: Cambria;
+    font-size: 15px;
+}
+
+#explanation {
+    font-size: 12px;
+}
+
+#title {
+    font-size: 35px;
+}
+
+#classWeight {
+    font-size: 20px;
+}
+
+#finalAvg {
+    font-size: 20px;
+}
